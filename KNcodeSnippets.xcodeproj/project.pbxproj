@@ -15,6 +15,7 @@
 		E15EF0E420142A0C003036D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15EF0E220142A0C003036D8 /* LaunchScreen.storyboard */; };
 		E15EF0EF20142A0C003036D8 /* KNcodeSnippetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0EE20142A0C003036D8 /* KNcodeSnippetsTests.m */; };
 		E15EF0FA20142A0C003036D8 /* KNcodeSnippetsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0F920142A0C003036D8 /* KNcodeSnippetsUITests.m */; };
+		E15EF10920142A78003036D8 /* KNRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF10820142A78003036D8 /* KNRegex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		E15EF0F520142A0C003036D8 /* KNcodeSnippetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KNcodeSnippetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15EF0F920142A0C003036D8 /* KNcodeSnippetsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNcodeSnippetsUITests.m; sourceTree = "<group>"; };
 		E15EF0FB20142A0C003036D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E15EF10720142A78003036D8 /* KNRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNRegex.h; sourceTree = "<group>"; };
+		E15EF10820142A78003036D8 /* KNRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNRegex.m; sourceTree = "<group>"; };
+		E15EF10B20142B6B003036D8 /* YYWebViewInterface-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYWebViewInterface-Protocol.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,15 @@
 		E15EF0D320142A0C003036D8 /* KNcodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				E15EF0D420142A0C003036D8 /* Supporting Files */,
+				E15EF10A20142A85003036D8 /* regex */,
+			);
+			path = KNcodeSnippets;
+			sourceTree = "<group>";
+		};
+		E15EF0D420142A0C003036D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				E15EF0D720142A0C003036D8 /* AppDelegate.h */,
 				E15EF0D820142A0C003036D8 /* AppDelegate.m */,
 				E15EF0DA20142A0C003036D8 /* ViewController.h */,
@@ -109,14 +122,6 @@
 				E15EF0E020142A0C003036D8 /* Assets.xcassets */,
 				E15EF0E220142A0C003036D8 /* LaunchScreen.storyboard */,
 				E15EF0E520142A0C003036D8 /* Info.plist */,
-				E15EF0D420142A0C003036D8 /* Supporting Files */,
-			);
-			path = KNcodeSnippets;
-			sourceTree = "<group>";
-		};
-		E15EF0D420142A0C003036D8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
 				E15EF0D520142A0C003036D8 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +143,16 @@
 				E15EF0FB20142A0C003036D8 /* Info.plist */,
 			);
 			path = KNcodeSnippetsUITests;
+			sourceTree = "<group>";
+		};
+		E15EF10A20142A85003036D8 /* regex */ = {
+			isa = PBXGroup;
+			children = (
+				E15EF10B20142B6B003036D8 /* YYWebViewInterface-Protocol.h */,
+				E15EF10720142A78003036D8 /* KNRegex.h */,
+				E15EF10820142A78003036D8 /* KNRegex.m */,
+			);
+			name = regex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +217,7 @@
 		E15EF0C920142A0C003036D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KN;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = devzkn;
 				TargetAttributes = {
@@ -276,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15EF10920142A78003036D8 /* KNRegex.m in Sources */,
 				E15EF0DC20142A0C003036D8 /* ViewController.m in Sources */,
 				E15EF0D920142A0C003036D8 /* AppDelegate.m in Sources */,
 				E15EF0D620142A0C003036D8 /* main.m in Sources */,
