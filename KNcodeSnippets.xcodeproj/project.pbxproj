@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10EF69220208A26006D1797 /* KNUIPasteboardIPC.m in Sources */ = {isa = PBXBuildFile; fileRef = E10EF69120208A26006D1797 /* KNUIPasteboardIPC.m */; };
 		E15EF0D620142A0C003036D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0D520142A0C003036D8 /* main.m */; };
 		E15EF0D920142A0C003036D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0D820142A0C003036D8 /* AppDelegate.m */; };
 		E15EF0DC20142A0C003036D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0DB20142A0C003036D8 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E10EF69020208A26006D1797 /* KNUIPasteboardIPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNUIPasteboardIPC.h; sourceTree = "<group>"; };
+		E10EF69120208A26006D1797 /* KNUIPasteboardIPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNUIPasteboardIPC.m; sourceTree = "<group>"; };
 		E15EF0D120142A0C003036D8 /* KNcodeSnippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNcodeSnippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15EF0D520142A0C003036D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E15EF0D720142A0C003036D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E10EF68F20208A13006D1797 /* UIPasteboard */ = {
+			isa = PBXGroup;
+			children = (
+				E10EF69020208A26006D1797 /* KNUIPasteboardIPC.h */,
+				E10EF69120208A26006D1797 /* KNUIPasteboardIPC.m */,
+			);
+			name = UIPasteboard;
+			sourceTree = "<group>";
+		};
 		E15EF0C820142A0C003036D8 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +117,7 @@
 		E15EF0D320142A0C003036D8 /* KNcodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				E10EF68F20208A13006D1797 /* UIPasteboard */,
 				E15EF0D420142A0C003036D8 /* Supporting Files */,
 				E15EF10A20142A85003036D8 /* regex */,
 			);
@@ -294,6 +307,7 @@
 			files = (
 				E15EF10920142A78003036D8 /* KNRegex.m in Sources */,
 				E15EF0DC20142A0C003036D8 /* ViewController.m in Sources */,
+				E10EF69220208A26006D1797 /* KNUIPasteboardIPC.m in Sources */,
 				E15EF0D920142A0C003036D8 /* AppDelegate.m in Sources */,
 				E15EF0D620142A0C003036D8 /* main.m in Sources */,
 			);
@@ -535,6 +549,7 @@
 				E15EF10020142A0C003036D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E15EF10120142A0C003036D8 /* Build configuration list for PBXNativeTarget "KNcodeSnippetsTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +558,7 @@
 				E15EF10320142A0C003036D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E15EF10420142A0C003036D8 /* Build configuration list for PBXNativeTarget "KNcodeSnippetsUITests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +567,7 @@
 				E15EF10620142A0C003036D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
