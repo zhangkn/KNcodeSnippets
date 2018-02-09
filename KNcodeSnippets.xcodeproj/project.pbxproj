@@ -19,6 +19,7 @@
 		E15EF10920142A78003036D8 /* KNRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF10820142A78003036D8 /* KNRegex.m */; };
 		E1DED0CE2024788B00593C0F /* KNdispatch_semaphore_t.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DED0CD2024788B00593C0F /* KNdispatch_semaphore_t.m */; };
 		E1DED0D9202D6CBD00593C0F /* KNNSURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DED0D8202D6CBD00593C0F /* KNNSURLComponents.m */; };
+		E1DED0DC202D81F300593C0F /* KNmultipartFormRequestWithMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DED0DB202D81F300593C0F /* KNmultipartFormRequestWithMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		E1DED0CD2024788B00593C0F /* KNdispatch_semaphore_t.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNdispatch_semaphore_t.m; sourceTree = "<group>"; };
 		E1DED0D7202D6CBD00593C0F /* KNNSURLComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNNSURLComponents.h; sourceTree = "<group>"; };
 		E1DED0D8202D6CBD00593C0F /* KNNSURLComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNNSURLComponents.m; sourceTree = "<group>"; };
+		E1DED0DA202D81F300593C0F /* KNmultipartFormRequestWithMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNmultipartFormRequestWithMethod.h; sourceTree = "<group>"; };
+		E1DED0DB202D81F300593C0F /* KNmultipartFormRequestWithMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNmultipartFormRequestWithMethod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				E1DED0D7202D6CBD00593C0F /* KNNSURLComponents.h */,
+				E1DED0DA202D81F300593C0F /* KNmultipartFormRequestWithMethod.h */,
+				E1DED0DB202D81F300593C0F /* KNmultipartFormRequestWithMethod.m */,
 				E1DED0D8202D6CBD00593C0F /* KNNSURLComponents.m */,
 			);
 			name = NSUrl;
@@ -333,6 +338,7 @@
 			files = (
 				E15EF10920142A78003036D8 /* KNRegex.m in Sources */,
 				E15EF0DC20142A0C003036D8 /* ViewController.m in Sources */,
+				E1DED0DC202D81F300593C0F /* KNmultipartFormRequestWithMethod.m in Sources */,
 				E1DED0CE2024788B00593C0F /* KNdispatch_semaphore_t.m in Sources */,
 				E1DED0D9202D6CBD00593C0F /* KNNSURLComponents.m in Sources */,
 				E10EF69220208A26006D1797 /* KNUIPasteboardIPC.m in Sources */,
