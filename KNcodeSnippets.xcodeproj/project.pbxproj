@@ -17,6 +17,8 @@
 		E15EF0EF20142A0C003036D8 /* KNcodeSnippetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0EE20142A0C003036D8 /* KNcodeSnippetsTests.m */; };
 		E15EF0FA20142A0C003036D8 /* KNcodeSnippetsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0F920142A0C003036D8 /* KNcodeSnippetsUITests.m */; };
 		E15EF10920142A78003036D8 /* KNRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF10820142A78003036D8 /* KNRegex.m */; };
+		E1DED0CE2024788B00593C0F /* KNdispatch_semaphore_t.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DED0CD2024788B00593C0F /* KNdispatch_semaphore_t.m */; };
+		E1DED0D9202D6CBD00593C0F /* KNNSURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DED0D8202D6CBD00593C0F /* KNNSURLComponents.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		E15EF10720142A78003036D8 /* KNRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNRegex.h; sourceTree = "<group>"; };
 		E15EF10820142A78003036D8 /* KNRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNRegex.m; sourceTree = "<group>"; };
 		E15EF10B20142B6B003036D8 /* YYWebViewInterface-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYWebViewInterface-Protocol.h"; sourceTree = "<group>"; };
+		E1DED0CC2024788B00593C0F /* KNdispatch_semaphore_t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNdispatch_semaphore_t.h; sourceTree = "<group>"; };
+		E1DED0CD2024788B00593C0F /* KNdispatch_semaphore_t.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNdispatch_semaphore_t.m; sourceTree = "<group>"; };
+		E1DED0D7202D6CBD00593C0F /* KNNSURLComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNNSURLComponents.h; sourceTree = "<group>"; };
+		E1DED0D8202D6CBD00593C0F /* KNNSURLComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNNSURLComponents.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,8 @@
 		E15EF0D320142A0C003036D8 /* KNcodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				E1DED0D6202D6CAE00593C0F /* NSUrl */,
+				E1DED0CB2024787100593C0F /* dispatch */,
 				E10EF68F20208A13006D1797 /* UIPasteboard */,
 				E15EF0D420142A0C003036D8 /* Supporting Files */,
 				E15EF10A20142A85003036D8 /* regex */,
@@ -166,6 +174,24 @@
 				E15EF10820142A78003036D8 /* KNRegex.m */,
 			);
 			name = regex;
+			sourceTree = "<group>";
+		};
+		E1DED0CB2024787100593C0F /* dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				E1DED0CC2024788B00593C0F /* KNdispatch_semaphore_t.h */,
+				E1DED0CD2024788B00593C0F /* KNdispatch_semaphore_t.m */,
+			);
+			name = dispatch;
+			sourceTree = "<group>";
+		};
+		E1DED0D6202D6CAE00593C0F /* NSUrl */ = {
+			isa = PBXGroup;
+			children = (
+				E1DED0D7202D6CBD00593C0F /* KNNSURLComponents.h */,
+				E1DED0D8202D6CBD00593C0F /* KNNSURLComponents.m */,
+			);
+			name = NSUrl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +333,8 @@
 			files = (
 				E15EF10920142A78003036D8 /* KNRegex.m in Sources */,
 				E15EF0DC20142A0C003036D8 /* ViewController.m in Sources */,
+				E1DED0CE2024788B00593C0F /* KNdispatch_semaphore_t.m in Sources */,
+				E1DED0D9202D6CBD00593C0F /* KNNSURLComponents.m in Sources */,
 				E10EF69220208A26006D1797 /* KNUIPasteboardIPC.m in Sources */,
 				E15EF0D920142A0C003036D8 /* AppDelegate.m in Sources */,
 				E15EF0D620142A0C003036D8 /* main.m in Sources */,
