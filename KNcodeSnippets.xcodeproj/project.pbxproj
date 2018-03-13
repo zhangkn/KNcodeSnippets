@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E10EF69220208A26006D1797 /* KNUIPasteboardIPC.m in Sources */ = {isa = PBXBuildFile; fileRef = E10EF69120208A26006D1797 /* KNUIPasteboardIPC.m */; };
+		E11DE9B8204BBD7B00E4A5BF /* KNNSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E11DE9B7204BBD7A00E4A5BF /* KNNSFileManager.m */; };
 		E15EF0D620142A0C003036D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0D520142A0C003036D8 /* main.m */; };
 		E15EF0D920142A0C003036D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0D820142A0C003036D8 /* AppDelegate.m */; };
 		E15EF0DC20142A0C003036D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0DB20142A0C003036D8 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		E10EF69020208A26006D1797 /* KNUIPasteboardIPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNUIPasteboardIPC.h; sourceTree = "<group>"; };
 		E10EF69120208A26006D1797 /* KNUIPasteboardIPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNUIPasteboardIPC.m; sourceTree = "<group>"; };
+		E11DE9B6204BBD7A00E4A5BF /* KNNSFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNNSFileManager.h; sourceTree = "<group>"; };
+		E11DE9B7204BBD7A00E4A5BF /* KNNSFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNNSFileManager.m; sourceTree = "<group>"; };
 		E15EF0D120142A0C003036D8 /* KNcodeSnippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNcodeSnippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15EF0D520142A0C003036D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E15EF0D720142A0C003036D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +106,15 @@
 			name = UIPasteboard;
 			sourceTree = "<group>";
 		};
+		E11DE9B5204BBD6300E4A5BF /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				E11DE9B6204BBD7A00E4A5BF /* KNNSFileManager.h */,
+				E11DE9B7204BBD7A00E4A5BF /* KNNSFileManager.m */,
+			);
+			name = NSFileManager;
+			sourceTree = "<group>";
+		};
 		E15EF0C820142A0C003036D8 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +138,7 @@
 		E15EF0D320142A0C003036D8 /* KNcodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				E11DE9B5204BBD6300E4A5BF /* NSFileManager */,
 				E1DED0D6202D6CAE00593C0F /* NSUrl */,
 				E1DED0CB2024787100593C0F /* dispatch */,
 				E10EF68F20208A13006D1797 /* UIPasteboard */,
@@ -339,6 +352,7 @@
 				E15EF10920142A78003036D8 /* KNRegex.m in Sources */,
 				E15EF0DC20142A0C003036D8 /* ViewController.m in Sources */,
 				E1DED0DC202D81F300593C0F /* KNmultipartFormRequestWithMethod.m in Sources */,
+				E11DE9B8204BBD7B00E4A5BF /* KNNSFileManager.m in Sources */,
 				E1DED0CE2024788B00593C0F /* KNdispatch_semaphore_t.m in Sources */,
 				E1DED0D9202D6CBD00593C0F /* KNNSURLComponents.m in Sources */,
 				E10EF69220208A26006D1797 /* KNUIPasteboardIPC.m in Sources */,
