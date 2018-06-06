@@ -18,6 +18,8 @@
 		E15EF0EF20142A0C003036D8 /* KNcodeSnippetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0EE20142A0C003036D8 /* KNcodeSnippetsTests.m */; };
 		E15EF0FA20142A0C003036D8 /* KNcodeSnippetsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF0F920142A0C003036D8 /* KNcodeSnippetsUITests.m */; };
 		E15EF10920142A78003036D8 /* KNRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EF10820142A78003036D8 /* KNRegex.m */; };
+		E17244EB20C80E51000DB6F6 /* UIWebView+KNtest.m in Sources */ = {isa = PBXBuildFile; fileRef = E17244EA20C80E51000DB6F6 /* UIWebView+KNtest.m */; };
+		E17244EE20C80EB8000DB6F6 /* KNconvertHexStrToString.m in Sources */ = {isa = PBXBuildFile; fileRef = E17244ED20C80EB8000DB6F6 /* KNconvertHexStrToString.m */; };
 		E1DED0CE2024788B00593C0F /* KNdispatch_semaphore_t.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DED0CD2024788B00593C0F /* KNdispatch_semaphore_t.m */; };
 		E1DED0D9202D6CBD00593C0F /* KNNSURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DED0D8202D6CBD00593C0F /* KNNSURLComponents.m */; };
 		E1DED0DC202D81F300593C0F /* KNmultipartFormRequestWithMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DED0DB202D81F300593C0F /* KNmultipartFormRequestWithMethod.m */; };
@@ -64,6 +66,10 @@
 		E15EF10720142A78003036D8 /* KNRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNRegex.h; sourceTree = "<group>"; };
 		E15EF10820142A78003036D8 /* KNRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNRegex.m; sourceTree = "<group>"; };
 		E15EF10B20142B6B003036D8 /* YYWebViewInterface-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYWebViewInterface-Protocol.h"; sourceTree = "<group>"; };
+		E17244E920C80E51000DB6F6 /* UIWebView+KNtest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebView+KNtest.h"; sourceTree = "<group>"; };
+		E17244EA20C80E51000DB6F6 /* UIWebView+KNtest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+KNtest.m"; sourceTree = "<group>"; };
+		E17244EC20C80EB8000DB6F6 /* KNconvertHexStrToString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNconvertHexStrToString.h; sourceTree = "<group>"; };
+		E17244ED20C80EB8000DB6F6 /* KNconvertHexStrToString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNconvertHexStrToString.m; sourceTree = "<group>"; };
 		E1DED0CC2024788B00593C0F /* KNdispatch_semaphore_t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNdispatch_semaphore_t.h; sourceTree = "<group>"; };
 		E1DED0CD2024788B00593C0F /* KNdispatch_semaphore_t.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNdispatch_semaphore_t.m; sourceTree = "<group>"; };
 		E1DED0D7202D6CBD00593C0F /* KNNSURLComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNNSURLComponents.h; sourceTree = "<group>"; };
@@ -144,6 +150,7 @@
 				E10EF68F20208A13006D1797 /* UIPasteboard */,
 				E15EF0D420142A0C003036D8 /* Supporting Files */,
 				E15EF10A20142A85003036D8 /* regex */,
+				E17244EF20C80EC1000DB6F6 /* KNconvertHexStrToString */,
 			);
 			path = KNcodeSnippets;
 			sourceTree = "<group>";
@@ -186,10 +193,21 @@
 			isa = PBXGroup;
 			children = (
 				E15EF10B20142B6B003036D8 /* YYWebViewInterface-Protocol.h */,
+				E17244E920C80E51000DB6F6 /* UIWebView+KNtest.h */,
+				E17244EA20C80E51000DB6F6 /* UIWebView+KNtest.m */,
 				E15EF10720142A78003036D8 /* KNRegex.h */,
 				E15EF10820142A78003036D8 /* KNRegex.m */,
 			);
 			name = regex;
+			sourceTree = "<group>";
+		};
+		E17244EF20C80EC1000DB6F6 /* KNconvertHexStrToString */ = {
+			isa = PBXGroup;
+			children = (
+				E17244EC20C80EB8000DB6F6 /* KNconvertHexStrToString.h */,
+				E17244ED20C80EB8000DB6F6 /* KNconvertHexStrToString.m */,
+			);
+			path = KNconvertHexStrToString;
 			sourceTree = "<group>";
 		};
 		E1DED0CB2024787100593C0F /* dispatch */ = {
@@ -349,10 +367,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17244EB20C80E51000DB6F6 /* UIWebView+KNtest.m in Sources */,
 				E15EF10920142A78003036D8 /* KNRegex.m in Sources */,
 				E15EF0DC20142A0C003036D8 /* ViewController.m in Sources */,
 				E1DED0DC202D81F300593C0F /* KNmultipartFormRequestWithMethod.m in Sources */,
 				E11DE9B8204BBD7B00E4A5BF /* KNNSFileManager.m in Sources */,
+				E17244EE20C80EB8000DB6F6 /* KNconvertHexStrToString.m in Sources */,
 				E1DED0CE2024788B00593C0F /* KNdispatch_semaphore_t.m in Sources */,
 				E1DED0D9202D6CBD00593C0F /* KNNSURLComponents.m in Sources */,
 				E10EF69220208A26006D1797 /* KNUIPasteboardIPC.m in Sources */,
@@ -510,6 +530,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UVWU8XCYJX;
 				INFOPLIST_FILE = KNcodeSnippets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhangkn.KNcodeSnippets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,6 +543,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UVWU8XCYJX;
 				INFOPLIST_FILE = KNcodeSnippets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhangkn.KNcodeSnippets;
 				PRODUCT_NAME = "$(TARGET_NAME)";

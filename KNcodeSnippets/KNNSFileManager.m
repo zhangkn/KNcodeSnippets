@@ -46,6 +46,81 @@ iPhone:~ root# ls -lrt /var/mobile/Library/Caches/sharedCaches
 }
 
 
++ (void)deletedirbyEnum{
+    // Enumerate all App Store Apps' directories and delete /Documents, /Library, /tmp, /StoreKit
+   id cleanDirRet = setupdeletedir(@"/var/mobile/Library/Caches/com.apple.storeservices");
+    
+}
+
+
+/**
+ NSString *docsDir = [NSHomeDirectory() stringByAppendingPathComponent:  @"Documents"];
+ NSFileManager *localFileManager=[[NSFileManager alloc] init];
+ NSDirectoryEnumerator *dirEnum =
+ [localFileManager enumeratorAtPath:docsDir];
+ 
+ NSString *file;
+ while ((file = [dirEnum nextObject])) {
+ if ([[file pathExtension] isEqualToString: @"doc"]) {
+ // process the document
+ [self scanDocument: [docsDir stringByAppendingPathComponent:file]];
+ }
+ }
+
+enumeratorAtPath
+ @param path <#path description#>
+ @return <#return value description#>
+ */
+static id setupdeletedir(NSString* path) {
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    NSError* err = nil;
+    
+    NSDirectoryEnumerator *dirEnum = [fileManager enumeratorAtPath:path];///遍历的方式enumeratorAtPath
+
+    
+    NSString *file;
+    while ((file = [dirEnum nextObject]))
+//        if ([file hasSuffix:@"/Documents"] || [file hasSuffix:@"/Library"] || [file hasSuffix:@"/tmp"] || [file hasSuffix:@"/StoreKit"])
+        {
+            [fileManager removeItemAtPath:[path stringByAppendingPathComponent:file] error:&err];
+//            [fileManager createDirectoryAtPath:[path stringByAppendingPathComponent:file] withIntermediateDirectories:NO attributes:[NSDictionary dictionaryWithObjectsAndKeys:@"mobile", NSFileOwnerAccountName, @"mobile", NSFileGroupOwnerAccountName, nil] error:nil];
+            if (err) {
+                NSLog(@"rm file err:%@", err);
+                return @[@(NO), err];
+            }
+        }
+//    return @[@(NO), err];
+    return @[@(YES)];
+}
+
+
+//另外一种删除文件的方式：contentsOfDirectoryAtPath
+static id KNcleanDir(NSString* path) {
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSArray *files = [fm contentsOfDirectoryAtPath:path error:NULL];//遍历的方式contentsOfDirectoryAtPath
+    for (NSString* file in files) {
+        //这里可以增加一些匹配规则，采用NSPredicate实现
+        /*
+         NSPredicate* predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",KNreg];//KNreg 为关键词字符串
+         return [predicate evaluateWithObject:file];//Returns a Boolean value that indicates whether a given object matches the conditions specified by the receiver.
+         */
+        NSString* fullpath = [path stringByAppendingPathComponent:file];
+        NSError* err = nil;
+        [fm removeItemAtPath:fullpath error:&err];
+        NSLog(@"KNrm :%@", fullpath);
+        if (err) {
+            NSLog(@"KN removeItemAtPath  err:%@", err);
+            return @[@(NO), err];
+        }
+        
+    }
+    
+    return @[@(YES)];
+}
+
+
 /**
  NSData *data = [text dataUsingEncoding: NSUTF8StringEncoding];
  往文件写数据--字符串

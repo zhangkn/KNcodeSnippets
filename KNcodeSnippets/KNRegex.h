@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "YYWebViewInterface-Protocol.h"
+//#import "YYWebViewInterface-Protocol.h"
+#import "UIWebView+KNtest.h"
 @interface KNRegex : NSObject
 
 @property (strong, nonatomic)  UIWebView<YYWebViewDelegate> *webView;
